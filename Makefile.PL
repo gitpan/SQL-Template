@@ -23,18 +23,16 @@ my %WriteMakefileArgs = (
   "PREREQ_PM" => {
     "Carp" => 0,
     "DBI" => 0,
-    "SQL::Template::Command::Composite" => 0,
-    "SQL::Template::Command::Leaf" => 0,
-    "SQL::Template::Command::Sentence" => 0,
     "XML::Parser" => 0,
     "base" => 0,
     "strict" => 0,
     "warnings" => 0
   },
   "TEST_REQUIRES" => {
+    "DBD::SQLite" => "1.25",
     "Test::More" => "0.88"
   },
-  "VERSION" => "0.2.0",
+  "VERSION" => "0.2.1",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -43,10 +41,8 @@ my %WriteMakefileArgs = (
 
 my %FallbackPrereqs = (
   "Carp" => 0,
+  "DBD::SQLite" => "1.25",
   "DBI" => 0,
-  "SQL::Template::Command::Composite" => 0,
-  "SQL::Template::Command::Leaf" => 0,
-  "SQL::Template::Command::Sentence" => 0,
   "Test::More" => "0.88",
   "XML::Parser" => 0,
   "base" => 0,

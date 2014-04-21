@@ -3,6 +3,7 @@ abstract: 'A new way to organize your database code'
 author:
   - 'Miguel Prz <niceperl@gmail.com>'
 build_requires:
+  DBD::SQLite: 1.25
   Test::More: 0.88
 configure_requires:
   ExtUtils::MakeMaker: 6.30
@@ -16,9 +17,6 @@ name: SQL-Template
 requires:
   Carp: 0
   DBI: 0
-  SQL::Template::Command::Composite: 0
-  SQL::Template::Command::Leaf: 0
-  SQL::Template::Command::Sentence: 0
   XML::Parser: 0
   base: 0
   strict: 0
@@ -27,4 +25,4 @@ resources:
   bugtracker: https://github.com/niceperl/SQL-Template/issues
   homepage: https://github.com/niceperl/SQL-Template
   repository: https://github.com/niceperl/SQL-Template
-version: 0.2.0
+version: 0.2.1
