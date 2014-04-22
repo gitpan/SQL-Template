@@ -15,5 +15,4 @@ t/01-create-object.t
 t/conf/01-test.xml
 t/db/sqltemplate.sqlite
 t/pod-coverage.t
-t/pod.t
 xt/release/pod-syntax.t
